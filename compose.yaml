@@ -1,0 +1,19 @@
+name: wui-single
+services:
+  web:
+    container_name: wui_single_container
+    image: mochrira/dev:latest
+    volumes:
+      - ./:/workspace
+    networks:
+      - environment
+    environment:
+      - NG_INSTALL=YES
+      - NG_VERSION=18
+    ports:
+      - 8080:80
+
+networks:
+  environment:
+    name: environment
+    external: true

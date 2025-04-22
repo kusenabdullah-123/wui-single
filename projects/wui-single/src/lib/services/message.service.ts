@@ -1,0 +1,23 @@
+import { Injectable } from '@angular/core';
+import { Subject, Observable } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class MessageService {
+
+  private handler = new Subject<any>();
+
+  set(name: string, payload: any) {
+    this.handler.next({ name: name, payload: payload });
+  }
+
+  get(name: string): Observable<any> {
+    return this.handler.asObservable().pipe(
+      filter(message => message.name === name),
+      map(message => message.payload)
+    );
+  }
+
+}
