@@ -1,5 +1,5 @@
 {
-  "name": "wui-single",
+  "name": "@kusena/wui-single",
   "version": "18.0.1",
   "peerDependencies": {
     "@angular/common": "^18.2.0",
