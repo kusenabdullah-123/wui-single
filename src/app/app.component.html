@@ -9,14 +9,14 @@
               <div class="wui-drawer-header-subtitle">Core Version</div>
           </div>
 
-          <wui-drawer-item icon="home" routerLink="/home" routerLinkActive="active">Dashboard</wui-drawer-item>
-          <wui-drawer-item icon="text-long" routerLink="/artikel" routerLinkActive="active">Artikel</wui-drawer-item>
+          <wui-drawer-item [icon]="icons.home" routerLink="/home" routerLinkActive="active">Dashboard</wui-drawer-item>
+          <wui-drawer-item [icon]="icons.textLong" routerLink="/artikel" routerLinkActive="active">Artikel</wui-drawer-item>
 
           <div class="wui-drawer-divider">
               <div class="wui-drawer-divider-label">LAYOUT</div>
           </div>
-          <wui-drawer-item icon="login-variant" routerLink="/signin" routerLinkActive="active">Sign In</wui-drawer-item>
-          <wui-drawer-item icon="table" routerLink="/table" routerLinkActive="active">Table</wui-drawer-item>
+          <wui-drawer-item [icon]="icons.loginVariant" routerLink="/signin" routerLinkActive="active">Sign In</wui-drawer-item>
+          <wui-drawer-item [icon]="icons.table" routerLink="/table" routerLinkActive="active">Table</wui-drawer-item>
       </div>
   </wui-drawer>
 
