@@ -3,20 +3,20 @@
         <wui-app-bar>
             <div class="wui-app-bar-leading">
                 <button class="wui-button wui-button-large wui-button-icon wui-button-smooth" wuiToggleDrawer>
-                    <wui-icon icon="menu"></wui-icon>
+                    <wui-icon [icon]="icons.homeMenu"></wui-icon>
                 </button>
             </div>
             <div class="wui-app-bar-title"></div>
             <div class="wui-app-bar-trailing"></div>
         </wui-app-bar>
-    
+
         <div class="wui-page-inner">
             <div class="wui-page-container">
                 <ul class="wui-breadcrumb">
-                    <li><wui-icon icon="home"></wui-icon></li>
+                    <li><wui-icon [icon]="icons.home"></wui-icon></li>
                     <li>Dashboard</li>
                 </ul>
-    
+
                 <h1>Dashboard</h1>
             </div>
         </div>
